@@ -32,15 +32,11 @@ header h1 {
     text-align: center;
 }
 
-main ul li {
-    padding-left: 30px;
-}
-
 footer {
     margin: 1rem auto;
     border: 1px solid #bbb;
     padding: .5em;
     background-color: #072a5e;
     color: white;
-    align-items: center;
+    text-align: center;
 }
