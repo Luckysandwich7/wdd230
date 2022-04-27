@@ -32,6 +32,10 @@ header h1 {
     text-align: center;
 }
 
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 footer {
     margin: 1rem auto;
     border: 1px solid #bbb;
