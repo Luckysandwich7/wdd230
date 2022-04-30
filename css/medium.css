@@ -1,0 +1,13 @@
+/* Medium media query section */
+@media (min-width: 32.5em) {
+    h2 {
+        color: #072a5e;
+}
+}
+
+/* Large media query section */
+@media (min-width: 64em) {
+    h2 {
+        color: #979797
+    }
+}
