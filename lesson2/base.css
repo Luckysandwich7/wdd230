@@ -48,12 +48,6 @@ main {
     }
 }
 
-@media (min-width: 1440px) {
-    section:nth-child(3) {
-        width: 100px;
-    }
-}
-
 @media (min-width: 961px) {
     section:nth-child(3) {
         margin-top: 0;
