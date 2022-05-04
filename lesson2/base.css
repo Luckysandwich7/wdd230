@@ -41,10 +41,16 @@ main {
     grid-template-columns: 1fr;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     section:nth-child(3) {
         margin-top: 10px;
         width: 80%;
+    }
+}
+
+@media (min-width: 1440px) {
+    section:nth-child(3) {
+        width: 100px;
     }
 }
 
