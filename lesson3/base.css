@@ -11,9 +11,19 @@ body {
 }
 
 /* phone or baseline views **************************/
-header,
+header {
+	background-color: #17221C;
+	color: white;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
 footer {
-	background-color: #bed;
+	background-color: #14272E;
+	color: white;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -25,7 +35,7 @@ footer {
 header,
 main,
 footer {
-	max-width: 767px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 h1 {
@@ -38,8 +48,9 @@ h2 {
 nav {
 	background-color: #36454f;
 	margin: 0 auto;
-	max-width: 780px;
+	max-width: 900px;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+	margin-bottom: 10px;
 }
 nav ul {
 	list-style-type: none;
@@ -54,29 +65,20 @@ nav ul li a {
 	padding: 0.75rem;
 	text-decoration: none;
 	font-size: 0.95rem;
-	background: linear-gradient(90deg, transparent, yellow, transparent) top /
+	background: linear-gradient(90deg, transparent, white) top /
 		var(--d, 0) 10px no-repeat;
 	transition: 0.5s;
 }
 
 .active {
-	color: yellow;
+	color: #6e9078;
 }
 main {
 	display: grid;
 	grid-template-columns: 1fr;
 	font-size: 0.8rem;
 }
-main article {
-	margin: 1rem;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	padding: 1rem;
-	background-color: #eee;
-}
 
-main article ul {
-	margin: 1rem 0 0 1rem;
-}
 main picture {
 	display: none;
 	margin: 1rem;
@@ -113,21 +115,6 @@ footer p {
 	color: #36454f; */
 		--d: 75%;
 	}
-
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
-	article:nth-child(3) {
-		grid-column: span 2;
-	}
-	main picture {
-		display: block;
-	}
-	main picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
 }
 
 /* Desktop Views ****************************/
@@ -138,10 +125,60 @@ footer p {
 	nav a {
 		font-size: 1.1rem;
 	}
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	article:nth-child(3) {
-		grid-column: span 1;
-	}
+}
+
+
+/* Code for Color Scheme page */
+.colorcolumn {
+	background-color: #f6f6f6;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.headerbackground {
+	background-color: #17221C;
+}
+
+section {
+	display: block;
+}
+
+section p {
+	padding: 1rem;
+}
+
+h3, h4 {
+	border-radius: 10px 10px 0 0;
+	padding: 5px;
+	color: white;
+}
+
+.twocolumns {
+	display: grid;
+	grid-template-columns: auto auto;
+	border-radius: 10px;
+	padding: 10px;
+	grid-gap: 10px;
+}
+
+div section {
+	background-color: #36454f;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.menu {
+	padding: 1rem;
+	color: white;
+	background-color: #36454f;
+}
+
+.subheadline {
+	padding: .65rem;
+	background-color: #14272E;
+}
+
+.contentbody {
+	background-color: #f6f6f6;
+	border-radius: 0 0 10px 10px;
 }
