@@ -192,3 +192,12 @@ div section {
 .homeimage {
 	margin: 20px;
 }
+
+.portriatimage {
+	height: 350px;
+	margin: 5px;
+}
+
+.list {
+	padding: 2px;
+}
