@@ -129,10 +129,15 @@ footer p {
 
 
 /* Code for Color Scheme page */
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
 .colorcolumn {
 	background-color: #f6f6f6;
 	border-radius: 10px;
 	text-align: center;
+	margin: 10px;
 }
 
 .headerbackground {
@@ -151,6 +156,7 @@ h3, h4 {
 	border-radius: 10px 10px 0 0;
 	padding: 5px;
 	color: white;
+	font-family: 'Bebas Neue', cursive;
 }
 
 .twocolumns {
@@ -181,4 +187,8 @@ div section {
 .contentbody {
 	background-color: #f6f6f6;
 	border-radius: 0 0 10px 10px;
+}
+
+.homeimage {
+	margin: 20px;
 }
