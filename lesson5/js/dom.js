@@ -32,7 +32,7 @@ button.onclick = function() {
     function required(input)
 
     {
-      if (input.value.length == 0)
+      if (input.value.length == 6)
       { 
           alert("Please, add your favorite chapter");  	
           return false; 
