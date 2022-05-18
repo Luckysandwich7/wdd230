@@ -1,7 +1,8 @@
-    button.onclick = function() {
+const button = document.querySelector('button');
+
+button.onclick = function() {
       const list = document.querySelector('ul');
       const input = document.getElementById("favchap");
-      const button = document.querySelector('button');
 
     if( required(input)) { 
       let myItem = input.value;
