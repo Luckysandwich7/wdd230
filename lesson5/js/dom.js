@@ -18,10 +18,11 @@ button.onclick = function() {
       listBtn.innerHTML = '❌';
       list.appendChild(listItem);
 
+      if (!listBtn.onclick) {
       listBtn.onclick = function(e) {
         list.removeChild(listItem);
       }
-
+    }
       input.focus();
     }
     }
