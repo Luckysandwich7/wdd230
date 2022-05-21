@@ -42,3 +42,9 @@ function toggleMenu() {
 
 const x = document.getElementById("hamburgerBtn")
 x.onclick = toggleMenu;
+
+const datefield = document.querySelector(".date");
+const now = new Date();
+const currentdate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+
+datefield.innerHTML = `${currentdate}`;
