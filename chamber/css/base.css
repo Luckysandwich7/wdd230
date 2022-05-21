@@ -92,6 +92,16 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.heroHead {
+    font-size: 36px;
+    padding-top: 10px;
+}
+.joinButton {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
 #weather {
     grid-column: 1;
     grid-row: 3 / 5;
