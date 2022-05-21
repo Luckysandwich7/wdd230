@@ -87,6 +87,10 @@ main {
 #hero {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
+    color: white;
+    background: url("../images/GettyImages-909708220.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #weather {
     grid-column: 1;
