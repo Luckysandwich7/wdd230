@@ -69,6 +69,15 @@ h2 {
     text-align: center;
 }
 
+.weatherheadline {
+    background-color: #131c17;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    width: 500px ;
+    text-align: center;
+}
+
 .date {
     border-radius: 10px 10px 10px 10px
 }
@@ -92,7 +101,7 @@ main {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
     color: #131c17;
-    background: url("../images/wdd230-org.jpg");
+    background: url("../images/wdd230-org(large).webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -113,8 +122,14 @@ main {
 #weather {
     grid-column: 1;
     grid-row: 3 / 5;
-    justify-content: center;
     color: white;
+}
+.weatherIcon {
+    display: flex;
+    padding: 20px;
+}
+.windspeed {
+    border-top: 1px solid #fff;
 }
 #join {
     grid-column: 1;
