@@ -48,3 +48,6 @@ const now = new Date();
 const currentdate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 
 datefield.innerHTML = `${currentdate}`;
+
+var date = new Date();
+$("#banner" + date.getDay()).show();
