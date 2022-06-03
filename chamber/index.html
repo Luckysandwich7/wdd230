@@ -11,8 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
 </head>
@@ -30,11 +28,16 @@
                     </ul>
                 <h2 class="date"></h2>
         </nav>
-        <section class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</section>
+        <section id="banner"></section>
     </header>
     <main>
         <section id="hero">
             <h3 class="heroHead">Welcome to Great Lakes</h3>
+            <picture>
+                <source media="(min-width:1200px)" srcset="/wdd230/chamber/images/wdd230-org(large).webp">
+                <source media="(min-width:900px)" srcset="/wdd230/chamber/images/wdd230-org(medium).webp">
+                <img src="/wdd230/chamber/images/wdd230-org(small).webp" alt="Flowers">
+              </picture>
             <a class="joinButton" href="X">Join the Chamber</a>
         </section>
         <section id="event">
