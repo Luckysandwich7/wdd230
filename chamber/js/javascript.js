@@ -62,6 +62,6 @@ weekday [6] = 'Saturday';
 var currentDate = new Date();
 weekdayValue = currentDate.getDay();
 
-if (weekdayValue > 0 <= 3) {
+if (weekdayValue > 0 < 3) {
 	document.getElementById("banner").innerHTML = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'
 }
