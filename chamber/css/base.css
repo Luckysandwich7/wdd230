@@ -45,6 +45,11 @@ footer {
     text-align: center;
 }
 
+nav ul li a {
+    padding: .5rem 1rem;
+    margin: 1rem;
+}
+
 header img {
     height: 120px;
     width: 150px;
