@@ -60,8 +60,37 @@ h2 {
     text-align: center;
 }
 
+.natureImages {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 5px;
+}
+
+.deerImage {
+    grid-column: 1;
+    grid-row: 1;
+    height: 92.5%;
+}
+
+.hikingImage {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+
 picture img {
     width: 100%;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+  
+img {
+    filter: blur(0em);
+    transition: filter 1.0s;
 }
 
 /*This is for Medium Screens */
@@ -121,13 +150,6 @@ picture img {
 
     nav ul li a {
         border: none;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
     }
 
     picture img {
