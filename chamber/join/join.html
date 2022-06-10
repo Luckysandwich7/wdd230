@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan K. Alvord | WDD 230</title>
+    <meta name="description" content="Assignment portal for Ryan Alvord in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images\GreakLakesLogo.jpg" alt="Great Lakes Commerce Logo"></a>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li><a href="/chamber/index.html">Home</a></li>
+                        <li><a href="chamber/discover/discover.html">Discover</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li class="active"><a href="chamber/join/join.html">Join</a></li>
+                        <li><a href="#">Contact</a></li>    
+                    </ul>
+                <h2 class="date"></h2>
+        </nav>
+        <section id="banner"></section>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Application Form</legend>
+                <label for="fname">First Name*</label><br>
+                <input type="text" id="fname" required placeholder="Enter your first name"><br>
+                <label for="lname">Last Name*</label><br>
+                <input type="text" id="lname" required placeholder="Enter your last name"><br>
+                <label for="business">Business Position:</label><br>
+                <input type="text" id="business" pattern="[A-Za-z - ]{7,}"><br>
+                <lable for="email">Email*</lable><br>
+                <input type="email" id="email" required placeholder="email@email.com"><br>
+                <lable for="phone">Phone*</lable><br>
+                <input type="tel" id="phone" required placeholder="123-456-7890"><br>
+                <label for="title">Business Name*</label><br>
+                <input type="text" id="btitle" required placeholder="Company"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Membership<span>(Choose One)</span></legend>
+                <label for="Npmbr"></label>
+                <input type="radio" id="Npmbr">NP Membership</input><br>
+                <label for="Bronzembr"></label>
+                <input type="radio" id="Bronzembr">Bronze Membership</input><br>
+                <label for="Silvermbr"></label>
+                <input type="radio" id="Silvermbr">Silver Membership</input><br>
+                <label for="Goldmbr"></label>
+                <input type="radio" id="Goldmbr">Gold Membership</input><br>
+            </fieldset>
+            <fieldset>
+                <legend>Business Description</legend>
+                <label for="Bdescription"></label>
+                <input type="textarea" id="Bdescription"></input>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="copyDate"></span> <strong>|</strong> Ryan K. Alvord <strong>|</strong> Utah</p>
+        <p>Last Updated: <span id="dateMod"></span></p>
+    </footer>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
