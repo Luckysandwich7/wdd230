@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan K. Alvord | WDD 230</title>
+    <title>Join | Great Lakes</title>
     <meta name="description" content="Assignment portal for Ryan Alvord in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,49 +27,56 @@
                         <li class="active"><a href="chamber/join/join.html">Join</a></li>
                         <li><a href="#">Contact</a></li>    
                     </ul>
-                <h2 class="date"></h2>
         </nav>
-        <section id="banner"></section>
     </header>
     <main>
         <form method="get" action="thankyou.html">
-            <fieldset>
+            <fieldset class="app-info">
                 <legend>Application Form</legend>
-                <label for="fname">First Name*</label><br>
-                <input type="text" id="fname" required placeholder="Enter your first name"><br>
-                <label for="lname">Last Name*</label><br>
-                <input type="text" id="lname" required placeholder="Enter your last name"><br>
-                <label for="business">Business Position:</label><br>
-                <input type="text" id="business" pattern="[A-Za-z - ]{7,}"><br>
-                <lable for="email">Email*</lable><br>
-                <input type="email" id="email" required placeholder="email@email.com"><br>
-                <lable for="phone">Phone*</lable><br>
-                <input type="tel" id="phone" required placeholder="123-456-7890"><br>
-                <label for="title">Business Name*</label><br>
-                <input type="text" id="btitle" required placeholder="Company"><br>
+                    <label for="fname" class="app">First Name*
+                        <input type="text" id="fname" required placeholder="Enter your first name">
+                    </label>
+                    <label for="lname" class="app">Last Name*
+                        <input type="text" id="lname" required placeholder="Enter your last name">
+                    </label>
+                    <label for="business" class="app">Business Position:
+                        <input type="text" id="business" pattern="[A-Za-z - ]{7,}">
+                    </label>
+                    <lable for="email" class="app">Email*
+                        <input type="email" id="email" required placeholder="email@email.com">
+                    </lable>
+                    <lable for="phone" class="app">Phone*
+                        <input type="tel" id="phone" required placeholder="123-456-7890">
+                    </lable>
+                    <label for="title" class="app">Business Name*
+                        <input type="text" id="btitle" required placeholder="Company">
+                    </label>
             </fieldset>
-            <fieldset>
-                <legend>Membership<span>(Choose One)</span></legend>
-                <label for="Npmbr"></label>
-                <input type="radio" id="Npmbr">NP Membership</input><br>
-                <label for="Bronzembr"></label>
-                <input type="radio" id="Bronzembr">Bronze Membership</input><br>
-                <label for="Silvermbr"></label>
-                <input type="radio" id="Silvermbr">Silver Membership</input><br>
-                <label for="Goldmbr"></label>
-                <input type="radio" id="Goldmbr">Gold Membership</input><br>
+            <fieldset class="member-lvl">
+                <legend>Membership<em>(Choose One)</em></legend>
+                    <label for="Npmbr" class="sbs"></label>
+                        <input type="radio" id="Npmbr" name="Membership Level" value="NPmbr">NP Membership<br>
+                    <label for="Bronzembr" class="sbs"></label>
+                        <input type="radio" id="Bronzembr" name="Membership Level" value="Bronzembr">Bronze Membership<br>
+                    <label for="Silvermbr" class="sbs"></label>
+                        <input type="radio" id="Silvermbr" name="Membership Level" value="Silvermbr">Silver Membership<br>
+                    <label for="Goldmbr" class="sbs"></label>
+                        <input type="radio" id="Goldmbr" name="Membership Level" value="Goldmbr">Gold Membership<br>
             </fieldset>
-            <fieldset>
+            <fieldset class="disc">
                 <legend>Business Description</legend>
                 <label for="Bdescription"></label>
-                <input type="textarea" id="Bdescription"></input>
+                <textarea id="txtid" name="Business Description" rows="10" cols="42" maxlength="500"></textarea>
             </fieldset>
+            <input type="hidden" id="date" name="date" value="CurrentTime">
+            <input type="hidden" id="time" name="time" value="CurrentTime">
+            <input type="submit" value="Join Community" class="submitBtn">
         </form>
     </main>
     <footer>
         <p>© <span id="copyDate"></span> <strong>|</strong> Ryan K. Alvord <strong>|</strong> Utah</p>
         <p>Last Updated: <span id="dateMod"></span></p>
     </footer>
-    <script src="js/javascript.js"></script>
+    <script src="javascript/javascript.js"></script>
 </body>
 </html>
