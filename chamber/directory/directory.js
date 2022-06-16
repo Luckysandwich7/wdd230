@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://luckysandwich7.github.io/wdd230/chamber/directory/data.json';
 const cards = document.querySelector('.cards');
 
 async function getProphets() {
