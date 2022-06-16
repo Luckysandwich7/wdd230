@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan K. Alvord | WDD 230</title>
+    <meta name="description" content="Assignment portal for Ryan Alvord in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="directory.css">
+    <link rel="stylesheet" href="base.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images\GreakLakesLogo.jpg" alt="Great Lakes Commerce Logo"></a>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li><a href="/chamber/index.html">Home</a></li>
+                        <li><a href="chamber/discover/discover.html">Discover</a></li>
+                        <li class="active"><a href="#">Directory</a> </li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="chamber/join/join.html">Join</a></li>
+                        <li><a href="#">Contact</a></li>    
+                    </ul>
+                <h2 class="date"></h2>
+        </nav>
+    </header>
+    <main>
+        <div class="cards"></div>
+    </main>
+    <footer>
+        <p>© <span id="copyDate"></span> <strong>|</strong> Ryan K. Alvord <strong>|</strong> Utah</p>
+        <p>Last Updated: <span id="dateMod"></span></p>
+    </footer>
+    <script src="javascript/stylesheet.js"></script>
+</body>
+</html>

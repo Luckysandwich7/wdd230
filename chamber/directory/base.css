@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+header, nav, main, footer {
+    margin: .75rem auto;
+}  
+
+header {
+    border: 1px solid #bbb;
+    padding: .5rem;
+    background-color: #36454f;
+    color: white;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+footer {
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: .5em;
+    background-color: #36454f;
+    color: white;
+    text-align: center;
+}
+
+header img {
+    height: 120px;
+    width: 150px;
+    padding-left: 15px;
+}
+
+/* section {
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: #36454f;
+    border-radius: 10px;
+} */
+
+h2 {
+    justify-content: center;
+    background-color: #131c17;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    width: 100% ;
+    text-align: center;
+}
+
+.natureImages {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 5px;
+}
+
+.deerImage {
+    grid-column: 1;
+    grid-row: 1;
+    height: 92.5%;
+}
+
+.hikingImage {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+
+picture img {
+    width: 100%;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+  
+img {
+    filter: blur(0em);
+    transition: filter 1.0s;
+}
+
+/*This is for Medium Screens */
+@media only screen and (max-width: 90rem) {
+    main {
+        display: block;
+    }
+    
+    nav button {
+        display: none;
+    }
+
+    nav {
+        background-color: #36454f;
+        justify-self: right!important;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav button {
+        margin: .2rem 2vw;
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        color: #fff;
+        float: right;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: .8rem 2vw;
+        text-decoration: none;
+        color: #fff;
+        border-top: 1px solid rgba(255, 255, 255, 0.5)
+    }
+    
+    nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        color: white;
+    }
+    
+    nav ul li.active a {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #fff;
+    }
+
+
+    nav ul#primaryNav {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 2vw;
+    }
+
+    nav ul li a {
+        border: none;
+    }
+
+    picture img {
+        width: 100%;
+    }
+}
+/*This is for Small Sizes*/
+@media only screen and (max-width: 60rem) {
+    main {
+        display: block;
+    }
+
+    picture img {
+        width: 100%;
+    }
+}
