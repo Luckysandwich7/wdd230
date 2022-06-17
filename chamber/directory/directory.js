@@ -1,44 +1,49 @@
 const requestURL = 'https://luckysandwich7.github.io/wdd230/chamber/directory/data.json';
 const cards = document.querySelector('.cards');
 
-async function getProphets() {
-  let response = await fetch(requestURL);
-  if (response.ok) {
-    let data = await response.json();
-    displayProphets(data);
-  } else {
-    throw Error(response.statusText);
-  }
-}
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
 
-function displayProphets(data) {
+    const affiliates = jsonObject['affiliates'];
+    affiliates.forEach(displayAffiliates);
+  });
+
+function displayAffiliates(affiliate) {
   // Create elements to add to the document
-  data.prophets.forEach(prophet => {
-    let card = document.createElement('section');
-    let h2 = document.createElement('h2');
-    let birthdate = document.createElement('p');
-    let birthplace = document.createElement('p');
-    let portrait = document.createElement('img');
-  
-    // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.innerHTML = `${prophet.name} ${prophet.lastname}`;
-    birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
-    birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
-  
-    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
-    portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order} Latter-day President`);
-    portrait.setAttribute('loading', 'lazy');
-  
-    // Add/append the section(card) with the h2 element
-    card.appendChild(h2);
-    card.appendChild(birthdate);
-    card.appendChild(birthplace);
-    card.appendChild(portrait);
-  
-    // Add/append the existing HTML div with the cards class with the section(card)
-    cards.appendChild(card);
-});
-}
+  let card = document.createElement('section');
+  let h2 = document.createElement('h2');
+  let phone = document.createElement('p');
+  let email = document.createElement('p');
+  let website = document.createElement('p');
+  let image = document.createElement('img');
+  let membership = document.createElement('p');
 
-getProphets();
+  // Change the textContent property of the h2 element to contain the prophet's full name
+  h2.textContent = `${affiliate.name}`;
+  phone.textContent = `Phone: ${affiliate.phone}`;
+  email.textContent = `Email: ${affiliate.email}`;
+  website.textContent = `Website: ${affiliate.website}`;
+  membership.textContent = `${affiliate.membership} Member`;
+
+  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
+  image.setAttribute('src', affiliate.image);
+  image.setAttribute('alt', `Company logo of ${affiliate.name}, Black Forest Chamber of Commerce Affiliiate`);
+  image.setAttribute('loading', 'lazy');
+
+  // Add/append the section(card) with the h2 element
+  card.classList.add('card')
+  card.classList.add('blueborder')
+  card.appendChild(h2);
+  card.appendChild(image);
+  card.appendChild(phone);
+  card.appendChild(email);
+  card.appendChild(website);
+  card.appendChild(membership);
+
+  // Add/append the existing HTML div with the cards class with the section(card)
+  document.querySelector('div.cards').appendChild(card);
+}
