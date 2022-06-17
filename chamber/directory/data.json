@@ -5,7 +5,7 @@
           "phone": "(517) 587-6678",
           "email": "books@greatlakesbooks.com",
           "website": "glbookstore.com",
-          "image": "/images/bookstore.webp",
+          "image": "images/bookstore.webp",
           "membership": "Gold"
       },
       {
@@ -13,7 +13,7 @@
           "phone": "(517) 285-3586",
           "email": "fresh@glmarket.com",
           "website": "glmarket.com",
-          "image": "/images/market.webp",
+          "image": "images/market.webp",
           "membership": "Gold"
       },
       {
@@ -21,7 +21,7 @@
           "phone": "(517) 282-2333",
           "email": "food@breadandponds.com",
           "website": "breadandponds.com",
-          "image": "/images/resturant.webp",
+          "image": "images/resturant.webp",
           "membership": "Gold"
       },
       {
@@ -37,7 +37,7 @@
           "phone": "(517) 335-2282",
           "email": "info@greatelectric.com",
           "website": "greatelectric.com",
-          "image": "images/electric.jpg",
+          "image": "images/electric.webp",
           "membership": "Silver"
       },
       {
@@ -61,7 +61,7 @@
           "phone": "(517) 346-6433",
           "email": "info@greatlakesfinance.com",
           "website": "greaklakesfinance.com",
-          "image": "images/finance.jpg",
+          "image": "images/finance.webp",
           "membership": "Bronze"
       },
       {
@@ -69,7 +69,7 @@
           "phone": "(517) 729-7326",
           "email": "contact@gltheater.com",
           "website": "gltheater.com",
-          "image": "images/theater.jpg",
+          "image": "images/theater.webp",
           "membership": "NP"
       }
 

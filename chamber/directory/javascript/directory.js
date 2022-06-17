@@ -31,7 +31,7 @@ function displayAffiliates(affiliate) {
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
   image.setAttribute('src', affiliate.image);
-  image.setAttribute('alt', `Company logo of ${affiliate.name}, Black Forest Chamber of Commerce Affiliiate`);
+  image.setAttribute('alt', `Company logo of ${affiliate.name}, Great Lakes Chamber of Commerce Affiliiate`);
   image.setAttribute('loading', 'lazy');
 
   // Add/append the section(card) with the h2 element
@@ -46,18 +46,3 @@ function displayAffiliates(affiliate) {
   // Add/append the existing HTML div with the cards class with the section(card)
   document.querySelector('div.cards').appendChild(card);
 }
-
-getAffiliates()
-
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-
-gridbutton.addEventListener("click", () => {
-	cards.classList.add("grids");
-	cards.classList.remove("lists");
-});
-
-listbutton.addEventListener("click", () => {
-	cards.classList.add("lists");
-	cards.classList.remove("grids");
-});
