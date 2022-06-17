@@ -28,6 +28,59 @@ header a {
     text-decoration: none;
 }
 
+nav button {
+    display: none;
+}
+
+nav {
+    background-color: #36454f;
+    justify-self: right!important;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    float: right;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+nav ul li.active a {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+
+nav ul#primaryNav {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2vw;
+}
+
+nav ul li a {
+    border: none;
+}
+
 footer {
     margin: 1rem auto;
     border: 1px solid #bbb;
@@ -42,13 +95,6 @@ header img {
     width: 150px;
     padding-left: 15px;
 }
-
-/* section {
-    margin-bottom: 20px;
-    justify-content: center;
-    background-color: #36454f;
-    border-radius: 10px;
-} */
 
 h2 {
     justify-content: center;
