@@ -36,7 +36,6 @@ function displayAffiliates(affiliate) {
 
   // Add/append the section(card) with the h2 element
   card.classList.add('card')
-  card.classList.add('blueborder')
   card.appendChild(h2);
   card.appendChild(image);
   card.appendChild(phone);
@@ -47,3 +46,18 @@ function displayAffiliates(affiliate) {
   // Add/append the existing HTML div with the cards class with the section(card)
   document.querySelector('div.cards').appendChild(card);
 }
+
+getAffiliates()
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+
+gridbutton.addEventListener("click", () => {
+	cards.classList.add("grids");
+	cards.classList.remove("lists");
+});
+
+listbutton.addEventListener("click", () => {
+	cards.classList.add("lists");
+	cards.classList.remove("grids");
+});
