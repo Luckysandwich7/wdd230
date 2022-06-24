@@ -34,11 +34,6 @@
     <main>
         <section id="hero">
             <h3 class="heroHead">Welcome to Great Lakes</h3>
-            <picture>
-                <source media="(min-width:1200px)" srcset="/wdd230/chamber/images/wdd230-org(large).webp">
-                <source media="(min-width:900px)" srcset="/wdd230/chamber/images/wdd230-org(medium).webp">
-                <img src="/wdd230/chamber/images/wdd230-org(small).webp" alt="Flowers">
-              </picture>
             <a class="joinButton" href="X">Join the Chamber</a>
         </section>
         <section id="event">
@@ -46,15 +41,13 @@
         </section>
         <section id="weather">
             <h3 class="weatherheadline">Weather</h3>
-            <img class ="weatherIcon" src="images\weather.png" alt="Image of a cloud and sun">
-            <p class="windspeed">
-                <span>Windspeed:</span>
-                <span>4 mph</span>
-            </p>
-            <p class="windchill">
-                <span>Windchill:</span>
-                <span>29.2 °F</span>
-            </p>
+            <h1>Todays weather —</h1>
+            <p>The current temperature in Greak Lakes is <span id="current-temp"></span> &deg;F</p>
+            <h3>Current Condition Icon</h3>
+            <figure>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption></figcaption>
+            </figure>
         </section>
         <section id="join">
             <p>join</p>
@@ -78,6 +71,10 @@
         <p>© <span id="copyDate"></span> <strong>|</strong> Ryan K. Alvord <strong>|</strong> Utah</p>
         <p>Last Updated: <span id="dateMod"></span></p>
     </footer>
+    
     <script src="js/javascript.js"></script>
+    <script src="js/lastvisit.js"></script>  
+    <script>src="weatherapi.js"</script>
+    
 </body>
 </html>

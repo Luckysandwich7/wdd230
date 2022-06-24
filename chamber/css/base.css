@@ -50,6 +50,59 @@ nav ul li a {
     margin: 1rem;
 }
 
+nav button {
+    display: none;
+}
+
+nav {
+    background-color: #36454f;
+    justify-self: right!important;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    float: right;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+nav ul li.active a {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+
+nav ul#primaryNav {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2vw;
+}
+
+nav ul li a {
+    border: none;
+}
+
 header img {
     height: 120px;
     width: 150px;
@@ -74,12 +127,13 @@ h2 {
     text-align: center;
 }
 
+
+
 .weatherheadline {
     background-color: #131c17;
     color: #fff;
     padding: 10px;
     border-radius: 10px 10px 0 0;
-    width: 500px ;
     text-align: center;
 }
 
@@ -105,8 +159,9 @@ main {
 #hero {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
-    color: #131c17;
-    /* background: url("../images/wdd230-org(large).webp"); */
+    color: #ffffff;
+    text-align: center;
+    background: url("../images/GettyImages-909708220.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -116,9 +171,9 @@ main {
 }
 .joinButton {
     display: flex;
-    color: #131c17;
+    color: #ffffff;
     justify-content: center;
-    align-items: center;
+    margin-top: 300px;
 }
 
 .joinButton:hover {
@@ -128,6 +183,7 @@ main {
     grid-column: 1;
     grid-row: 3 / 5;
     color: white;
+    text-align: center;
 }
 .weatherIcon {
     display: flex;
