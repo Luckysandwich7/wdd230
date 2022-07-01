@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Great Lakes</title>
+    <meta name="description" content="Assignment portal for Ryan Alvord in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images\GreakLakesLogo.jpg" alt="Great Lakes Commerce Logo"></a>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li><a href="/chamber/index.html">Home</a></li>
+                        <li><a href="chamber/discover/discover.html">Discover</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="chamber/join/join.html">Join</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset class="app-info">
+                <legend>Application Form</legend>
+                    <label for="fname" class="app">First Name*
+                        <input type="text" id="fname" required placeholder="Enter your first name">
+                    </label>
+                    <label for="lname" class="app">Last Name*
+                        <input type="text" id="lname" required placeholder="Enter your last name">
+                    </label>
+                    <label for="email" class="app">Email*
+                        <input type="email" id="email" required placeholder="email@email.com">
+                    </label>
+                    <label for="phone" class="app">Phone*
+                        <input type="tel" id="phone" required placeholder="123-456-7890">
+                    </label>
+                    </label>
+            </fieldset>
+            <fieldset class="disc">
+                <legend>Have a Question?</legend>
+                <label for="Question"></label>
+                <textarea id="txtid" name="Have a Question" rows="10" cols="42" maxlength="500"></textarea>
+            </fieldset>
+            <input type="hidden" id="date" name="date" value="CurrentTime">
+            <input type="hidden" id="time" name="time" value="CurrentTime">
+            <input type="submit" value="Send Question" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="copyDate"></span> <strong>|</strong> Ryan K. Alvord <strong>|</strong> Utah</p>
+        <p>Last Updated: <span id="dateMod"></span></p>
+    </footer>
+    <script src="javascript/javascript.js"></script>
+</body>
+</html>
