@@ -1,0 +1,77 @@
+{
+  "affiliates": [
+      {
+          "name": "Great Lakes Book Store",
+          "phone": "(517) 587-6678",
+          "email": "books@greatlakesbooks.com",
+          "website": "glbookstore.com",
+          "image": "images/bookstore.webp",
+          "membership": "Gold"
+      },
+      {
+          "name": "Great Lakes Market",
+          "phone": "(517) 285-3586",
+          "email": "fresh@glmarket.com",
+          "website": "glmarket.com",
+          "image": "images/market.webp",
+          "membership": "Gold"
+      },
+      {
+          "name": "Bread and Ponds",
+          "phone": "(517) 282-2333",
+          "email": "food@breadandponds.com",
+          "website": "breadandponds.com",
+          "image": "images/resturant.webp",
+          "membership": "Gold"
+      },
+      {
+          "name": "Lakes Construction",
+          "phone": "(517) 423-9898",
+          "email": "build@glconstruct.com",
+          "website": "glconstruction.com",
+          "image": "images/build.webp",
+          "membership": "Silver"
+      },
+      {
+          "name": "Great Electric Lakes",
+          "phone": "(517) 335-2282",
+          "email": "info@greatelectric.com",
+          "website": "greatelectric.com",
+          "image": "images/electric.webp",
+          "membership": "Silver"
+      },
+      {
+          "name": "Great Lakes Fishing",
+          "phone": "(517) 555-3474",
+          "email": "support@glfishing.com",
+          "website": "glfishing.com",
+          "image": "images/fishing.webp",
+          "membership": "Silver"
+      },
+      {
+          "name": "Great Lakes Law",
+          "phone": "(517) 421-5297",
+          "email": "support@greatlakeslaw.com",
+          "website": "greatlakeslaw.com",
+          "image": "images/law.webp",
+          "membership": "Bronze"
+      },
+      {
+          "name": "Great Lakes Financial",
+          "phone": "(517) 346-6433",
+          "email": "info@greatlakesfinance.com",
+          "website": "greaklakesfinance.com",
+          "image": "images/finance.webp",
+          "membership": "Bronze"
+      },
+      {
+          "name": "Great Lakes Production",
+          "phone": "(517) 729-7326",
+          "email": "contact@gltheater.com",
+          "website": "gltheater.com",
+          "image": "images/theater.webp",
+          "membership": "NP"
+      }
+
+  ]
+}
