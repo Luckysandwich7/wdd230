@@ -125,7 +125,7 @@ form label.sbs {
 
 form input.submitBtn {
     border: none;
-    background-color: rgb(160, 223, 320);
+    background-color: #649c9b;
     border-radius: 15px;
     padding: 1rem 1rem;
     margin: 0 2rem 2rem;
@@ -306,7 +306,7 @@ p {
     
     form input.submitBtn {
         border: none;
-        background-color: rgb(160, 223, 320);
+        background-color: #649c9b;
         border-radius: 15px;
         padding: 1rem 1rem;
         margin: 0 2rem 2rem;
