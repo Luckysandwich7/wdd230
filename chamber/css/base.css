@@ -127,6 +127,14 @@ h2 {
     text-align: center;
 }
 
+p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 
 
 .weatherheadline {
@@ -157,6 +165,7 @@ main {
     grid-row: 1 / 3;
 }
 #hero {
+    display: grid;
     grid-column: 2 / 3;
     grid-row: 1 / 5;
     color: #ffffff;
@@ -164,20 +173,35 @@ main {
     background: url("../images/GettyImages-909708220.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 400px;
 }
 .heroHead {
     font-size: 36px;
     padding-top: 10px;
 }
-.joinButton {
-    display: flex;
+.c-btn {
     color: #ffffff;
+    background-color: #000;
     justify-content: center;
-    margin-top: 300px;
+    justify-content: flex-end;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 200px;
+    max-height: 40px;
+    margin: 0 auto;
+    text-decoration: none;
 }
 
-.joinButton:hover {
-    color: #ffffff;
+.c-btn:hover {
+    
+}
+
+.joinButton {
+    margin-top: 200px;
 }
 #weather {
     grid-column: 1;
@@ -195,23 +219,45 @@ main {
     display: flex;
     padding: 20px;
 }
+
 picture img {
     width: 100%;
 }
+
 .windspeed {
     border-top: 1px solid #fff;
 }
+
 #join {
     grid-column: 1;
     grid-row: 5 / 7;
 }
+
 #news {
+    display: grid;
     grid-column: 2;
     grid-row: 5 / 7;
+    min-height: 250px;
+    text-align: center;
 }
+
+.newsImage {
+    width: 100%;
+}
+
+.newButton {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #spotlight {
     grid-column: 3;
     grid-row: 1 / 7;
+}
+
+.spotlight {
+    margin-bottom: 20px;
 }
 
 .spotlight1 {
@@ -219,13 +265,13 @@ picture img {
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
-    padding: 100px;
+    margin-bottom: 20px;
 }
 
 .spotlight2 {
     border: 1px solid black;
     margin: 5px;
-    padding: 100px;
+    margin-bottom: 20px;
 }
 
 .spotlight3 {
@@ -233,7 +279,7 @@ picture img {
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 10px;
-    padding: 100px;
+    margin-bottom: 20px;
 }
 /*This is for Medium Screens */
 @media only screen and (max-width: 90rem) {
