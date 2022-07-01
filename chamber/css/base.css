@@ -150,7 +150,8 @@ p {
 }
 
 .spotlight {
-    border: 1px solid #649c9b;
+    border: 5px solid #649c9b;
+    border-radius: 10px 10px 0 0;
 }
 
 
@@ -162,9 +163,12 @@ main {
 }
 
 #event {
-    display: grid;
     grid-column: 1;
     grid-row: 1 / 3;
+}
+
+.eventImage {
+    width: 100%;
 }
 
 #hero {
@@ -184,7 +188,7 @@ main {
 }
 .c-btn {
     color: #ffffff;
-    background-color: #000;
+    background-color: #649c9b;
     justify-content: center;
     justify-content: flex-end;
     border-radius: 4px 4px 4px 4px;
@@ -271,27 +275,47 @@ picture img {
     margin-bottom: 20px;
 }
 
+.spotlight p {
+    font-size: 20px;
+}
+
+.spotlight ul {
+    color: white;
+    list-style: none;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
 .spotlight1 {
-    border: 1px solid black;
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .spotlight2 {
-    border: 1px solid black;
     margin: 5px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .spotlight3 {
-    border: 1px solid black;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 10px;
     margin-bottom: 20px;
+    text-align: center;
 }
+
+.spotImage {
+    padding-top: 10px;
+    width: 250px;
+    height: 250px;
+    filter: brightness(0) invert(1);
+}
+
 /*This is for Medium Screens */
 @media only screen and (max-width: 90rem) {
     main {
@@ -379,6 +403,7 @@ picture img {
     #news {
         grid-column: 1 / 4;
         grid-row: 3 / 5;
+
     }
     #spotlight {
         grid-column: 1 / 4;
