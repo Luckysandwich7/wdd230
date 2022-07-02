@@ -92,9 +92,6 @@ img {
     filter: blur(0em);
     transition: filter 1.0s;
 }
-
-/*This is for Medium Screens */
-@media only screen and (max-width: 90rem) {
     main {
         display: block;
     }
@@ -155,7 +152,6 @@ img {
     picture img {
         width: 100%;
     }
-}
 /*This is for Small Sizes*/
 @media only screen and (max-width: 60rem) {
     main {
@@ -164,5 +160,11 @@ img {
 
     picture img {
         width: 100%;
+    }
+
+    .deerImage {
+        grid-column: 1;
+        grid-row: 1;
+        height: 65%;
     }
 }
