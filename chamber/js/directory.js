@@ -1,18 +1,35 @@
+let affiliates = null
+let randomNumbers = []
+
 const requestURL = 'https://luckysandwich7.github.io/wdd230/chamber/directory/data.json';
 const cards = document.querySelector('.cards');
 
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+async function runFetch() {
+  await fetch(requestURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      console.table(jsonObject);  // temporary checking for valid response and data parsing
 
-    const affiliates = jsonObject['affiliates'];
-    affiliates.forEach(displayAffiliates);
-  });
+      affiliates = jsonObject.affiliates;
+      // affiliates.forEach(displayAffiliates);
+    });
+}
 
-function displayAffiliates(affiliate) {
+function getRandomAffiliate() {
+  // Returns a random integer from 0 to 9:
+  const random = getRandomNumber() //Math.floor(Math.random() * 9);
+  return affiliates[random];
+}
+
+function getRandomNumber() {
+  let random = Math.floor(Math.random() * 9);
+  if (randomNumbers.includes(random)) random = Math.floor(Math.random() * 9);
+  return random;
+}
+
+function displayAffiliate(affiliate, parentElement) {
   // Create elements to add to the document
   let card = document.createElement('section');
   let h2 = document.createElement('h2');
@@ -44,5 +61,5 @@ function displayAffiliates(affiliate) {
   card.appendChild(membership);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  document.querySelector('div.cards').appendChild(card);
+  document.querySelector(parentElement).appendChild(card);
 }

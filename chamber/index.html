@@ -64,7 +64,7 @@
         </section>
         <section id="spotlight">
             <div class="spotlight spotlight1">
-                <h2>Greak Lakes Fishing Classes</h2>
+                <!-- <h2>Greak Lakes Fishing Classes</h2>
                 <img class="spotImage" src="images/fishing.png" alt="Fishing at Great Lakes">
                 <p>Wanting to learn how to catch fish like a professional?</p>
                 <p>Location: Muskegon Lake</p>
@@ -72,10 +72,10 @@
                 <ul>                
                     <li>Monday-Friday: 8:00Am - 12:00Pm</li>
                     <li>Saturday: 7:00Am - 12:00Pm</li>
-                </ul>
+                </ul> -->
             </div>
             <div class="spotlight spotlight2">
-                <h2>Pottery Making Classes</h2>
+                <!-- <h2>Pottery Making Classes</h2>
                 <img class="spotImage" src="images/porcelain.png" alt="Fishing at Great Lakes">
                 <p>Interested in learning to make your own pottery? Come join us and learn how!</p>
                 <p>Location: Make It Your Own Pottery</p>
@@ -83,10 +83,10 @@
                 <ul>                
                     <li>Monday-Friday: 8:00Am - 5:00Pm</li>
                     <li>Saturday: 8:00Am - 7:00Pm</li>
-                </ul>
+                </ul> -->
             </div>
             <div class="spotlight spotlight3">
-                <h2>Greak Lakes Camping Resorts</h2>
+                <!-- <h2>Greak Lakes Camping Resorts</h2>
                 <img class="spotImage" src="images/camping.png" alt="Fishing at Great Lakes">
                 <p>Enjoy the outdoors with Family and Friends</p>
                 <p>Visit our campgrounds at the following locations:</p>
@@ -94,7 +94,7 @@
                     <li>ACT Campgrounds</li>
                     <li>DeerValley Sites</li>
                     <li>PineGrove Pitch</li>
-                </ul>
+                </ul> -->
             </div>
         </section>
     </main>
@@ -104,9 +104,25 @@
     </footer>
 
     <script src="js/javascript.js"></script>
-    <script src="js/directory.js"></script>
-    <script src="js/lastvisit.js"></script>  
+    <script src="js/directory.js"></script>  
     <script src="js/weatherapi.js"></script>
+
+    <script>
+        async function loadAffiliates() {
+        await runFetch();
+
+        let affiliate = getRandomAffiliate();
+        displayAffiliate(affiliate, 'div.spotlight.spotlight1');
+
+        affiliate = getRandomAffiliate();
+        displayAffiliate(affiliate, 'div.spotlight.spotlight2');
+
+        affiliate = getRandomAffiliate();
+        displayAffiliate(affiliate, 'div.spotlight.spotlight3');
+        }
+
+        loadAffiliates()
+    </script>
     
 </body>
 </html>
