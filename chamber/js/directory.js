@@ -25,7 +25,12 @@ function getRandomAffiliate() {
 
 function getRandomNumber() {
   let random = Math.floor(Math.random() * 9);
-  if (randomNumbers.includes(random)) random = Math.floor(Math.random() * 9);
+  for (let count = 0; count < 100; count++) {
+    // if ensures the number isn't the same if number is not the same it breaks out of loop.
+    if (!randomNumbers.includes(random)) break
+    random = Math.floor(Math.random() * 9);
+  }
+  randomNumbers.push(random);
   return random;
 }
 
