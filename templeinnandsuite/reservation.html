@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suite | Reservation</title>
+    <meta name="description" content="Submit a form to schedule a stay within a temple's range">
+    <link rel="shortcut icon" href="images\favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images\Temple Inn & Suites.png" alt="Temple Inn & Suites Logo"></a>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temple.html">Temples</a></li>
+                    <li class="active"><a href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset class="app-info">
+                <legend>Contact Information</legend>
+                    <label for="fname" class="app">First Name*
+                        <input type="text" id="fname" required placeholder="Enter your first name">
+                    </label>
+                    <label for="lname" class="app">Last Name*
+                        <input type="text" id="lname" required placeholder="Enter your last name">
+                    </label>
+                    <label for="email" class="app">Email*
+                        <input type="email" id="email" required placeholder="email@email.com">
+                    </label>
+                    <label for="phone" class="app">Phone*
+                        <input type="tel" id="phone" required placeholder="123-456-7890">
+                    </label>
+            </fieldset>
+            <fieldset class="stay-info">
+                <legend>Select Your Stay</legend>
+                    <label><h4>Check-in</h4>
+                        <input type="date" name="theDate"></label><br>
+                    <label><h4>Check-out</h4>
+                        <input type="date" name="theDate"></label><br>
+                        <label>
+                            <h4>How many Rooms?</h4>
+                            <select name="rooms" id="selectrooms" onchange="selectResponse()">
+                                <option value="" disabled selected>How many Rooms?</option>
+                                <option value="1person">1</option>
+                                <option value="2person">2</option>
+                                <option value="3person">3</option>
+                                <option value="4person">4</option>
+                                <option value="5person">5</option>
+                                <option value="6person">6</option>
+                                <option value="7person">7</option>
+                                <option value="8person">8</option>
+                            </select></label>
+                        <label>
+                            <h4>How many Adults?</h4>
+                            <select name="adults" id="selectadults" onchange="selectResponse()">
+                                <option value="" disabled selected>How many Adults?</option>
+                                <option value="1person">1</option>
+                                <option value="2person">2</option>
+                                <option value="3person">3</option>
+                                <option value="4person">4</option>
+                                <option value="5person">5</option>
+                                <option value="6person">6</option>
+                                <option value="7person">7</option>
+                                <option value="8person">8</option>
+                            </select></label>
+                        <label>
+                            <h4>How many Children?</h4>
+                            <select name="children" id="selectchildren" onchange="selectResponse()">
+                                <option value="" disabled selected>How many Children?</option>
+                                <option value="1person">1</option>
+                                <option value="2person">2</option>
+                                <option value="3person">3</option>
+                                <option value="4person">4</option>
+                                <option value="5person">5</option>
+                                <option value="6person">6</option>
+                                <option value="7person">7</option>
+                                <option value="8person">8</option>
+                            </select></label>
+            </fieldset>
+            <input type="hidden" id="date" name="date" value="CurrentTime">
+            <input type="hidden" id="time" name="time" value="CurrentTime">
+            <input type="submit" value="Book Now" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="copyDate"></span> <strong>|</strong> Ryan K. Alvord <strong>|</strong> Utah</p>
+        <p>Last Updated: <span id="dateMod"></span></p>
+    </footer>
+    <script src="javascript/javascript.js"></script>
+</body>
+</html>
