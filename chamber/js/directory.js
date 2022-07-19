@@ -24,11 +24,11 @@ function getRandomAffiliate() {
 }
 
 function getRandomNumber() {
-  let random = Math.floor(Math.random() * 9);
+  let random = Math.floor(Math.random() * 3);
   for (let count = 0; count < 100; count++) {
     // if ensures the number isn't the same if number is not the same it breaks out of loop.
     if (!randomNumbers.includes(random)) break
-    random = Math.floor(Math.random() * 9);
+    random = Math.floor(Math.random() * 3);
   }
   randomNumbers.push(random);
   return random;
