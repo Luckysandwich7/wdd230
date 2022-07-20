@@ -522,6 +522,30 @@ p {
     font-size: 22px;
 }
 
+.s-image-text3 {
+    display: grid;
+    grid-template-columns: 1fr 1.38fr;
+    margin-bottom: 25px;
+    max-width: auto;
+}
+
+.s-image3 img {
+    width: 100%;
+    max-width: 800px;
+}
+
+.page-missionary .s-text h4 {
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.page-missionary .s-text3 h4 {
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 22px;
+}
+
 /* Reception Page */
 
 .column-reception {
@@ -673,6 +697,10 @@ p {
     }
 
     .s-image-text2 {
+        display: block;
+    }
+
+    .s-image-text3 {
         display: block;
     }
 
