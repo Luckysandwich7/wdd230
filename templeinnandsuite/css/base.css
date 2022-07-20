@@ -642,6 +642,22 @@ p {
     }
 }
 
+/*This is for Services page for mobile screens with images and text*/
+@media (max-width: 815px) {
+        /* Services Page */
+        .s-image-text1 {
+            display: block;
+        }
+    
+        .s-image-text2 {
+            display: block;
+        }
+    
+        .s-image-text3 {
+            display: block;
+        }
+}
+
 
 /*This is small screens*/
 @media only screen and (max-width: 625px) {
