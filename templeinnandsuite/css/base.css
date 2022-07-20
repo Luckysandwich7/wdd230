@@ -521,6 +521,47 @@ p {
     margin-left: 40px;
     font-size: 22px;
 }
+
+/* Reception Page */
+
+.column-reception {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.column-reception h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.column-reception img {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+}
+
+.wedding {
+    background-color: #f6f6f6;
+    border: 1px solid #0b3948;
+    margin: 10px;
+    text-align: -webkit-center;
+}
+
+.food {
+    background-color: #f6f6f6;
+    border: 1px solid #0b3948;
+    margin: 10px;
+    text-align: -webkit-center;
+}
+
+.weddingBtn {
+    display: block;
+    text-align: center;
+}
+
 /*Contact Page*/
 
 #question {
@@ -632,6 +673,11 @@ p {
     }
 
     .s-image-text2 {
+        display: block;
+    }
+
+    /* Recpetion page*/
+    .column-reception {
         display: block;
     }
 
