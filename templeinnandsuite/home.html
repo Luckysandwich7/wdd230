@@ -105,7 +105,8 @@
         await runFetch();
 
         let affiliate = getRandomAffiliate();
-        displayAffiliate(affiliate, 'div.section_0.templedisplay');
+        let displayAffiliate = displayAffiliates();
+        displayAffiliate(affiliate, 'section .templedisplay .cards');
         }
 
         loadAffiliates()

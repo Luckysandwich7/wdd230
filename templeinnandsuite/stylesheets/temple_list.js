@@ -47,17 +47,17 @@ function displayAffiliates(affiliate) {
   let closed = document.createElement('p');
 
   // Change the textContent property of the h2 element to contain the prophet's full name
-  h2.textContent = `${affiliate.name}`;
-  phone.textContent = `Phone: ${affiliate.phone}`;
-  email.textContent = `Email: ${affiliate.email}`;
-  address.textContent = `Address: ${affiliate.address}`;
-  ordinance.textContent = `Ordinances: ${affiliate.ordinance}`;
-  session.textContent = `Schedule Session: ${affiliate.session}`;
-  closed.textContent =  `Closed: ${affiliate.closed}`
+  h2.textContent = `${affiliates.name}`;
+  phone.textContent = `Phone: ${affiliates.phone}`;
+  email.textContent = `Email: ${affiliates.email}`;
+  address.textContent = `Address: ${affiliates.address}`;
+  ordinance.textContent = `Ordinances: ${affiliates.ordinance}`;
+  session.textContent = `Schedule Session: ${affiliates.session}`;
+  closed.textContent =  `Closed: ${affiliates.closed}`
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
-  image.setAttribute('src', affiliate.image);
-  image.setAttribute('alt', `${affiliate.name}`);
+  image.setAttribute('src', affiliates.image);
+  image.setAttribute('alt', `${affiliates.name}`);
   image.setAttribute('loading', 'lazy');
 
   // Add/append the section(card) with the h2 element
@@ -72,5 +72,5 @@ function displayAffiliates(affiliate) {
   card.appendChild(closed);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  document.querySelector(parentElement).appendChild(card);
+  document.querySelector('.templedisplay .cards').appendChild(card);
 }
