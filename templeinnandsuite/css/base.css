@@ -42,10 +42,6 @@ nav ul li a {
     margin: 1rem;
 }
 
-nav button {
-    display: none;
-}
-
 nav {
     background-color: #0B3948;
 }
@@ -470,6 +466,61 @@ p {
     flex-direction: column;
 }
 
+/* Services Page */
+
+.s-image-text1 {
+    display: grid;
+    grid-template-columns: 1fr 1.38fr;
+    margin-bottom: 25px;
+    max-width: auto;
+}
+
+.s-image img {
+    width: 100%;
+    max-width: 800px;
+}
+
+.s-text ul {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.s-text ul li {
+    margin-left: 40px;
+    font-size: 22px;
+}
+
+.s-button {
+    margin-left: 40px;
+}
+
+.s-image-text2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 25px;
+    max-width: auto;
+}
+
+.s-image2 img {
+    width: 100%;
+    max-width: 800px;
+}
+
+.s-text2 h4 {
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.s-text2 ul {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.s-text2 ul li {
+    margin-left: 40px;
+    font-size: 22px;
+}
 /*Contact Page*/
 
 #question {
@@ -494,66 +545,97 @@ p {
 
 /*This is for Medium Screens */
 @media (max-width: 1320px) {    
-    nav button {
-        display: none;
+    header {
+        display: block;
     }
 
-    nav {
-        background-color: #36454f;
-        justify-self: right!important;
+    header .logo a {
+        display: block;
+        text-align-last: center;
     }
-    
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-    
+
     nav button {
         margin: .2rem 2vw;
         background-color: transparent;
         border: none;
         font-size: 2rem;
         color: #fff;
-        float: right;
-    }
-    
-    nav ul li a {
-        display: block;
-        padding: .8rem 2vw;
-        text-decoration: none;
-        color: #fff;
-        border-top: 1px solid rgba(255, 255, 255, 0.5)
-    }
-    
-    nav ul li a:hover {
-        background-color: rgba(255, 255, 255, 0.3);
-        color: white;
-    }
-    
-    nav ul li.active a {
-        background-color: rgba(255, 255, 255, 0.2);
-        color: #fff;
+        float: left;
     }
 
 
-    nav ul#primaryNav {
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 2vw;
-    }
 
-    nav ul li a {
-        border: none;
+    .social {
+        display: none;
     }
 }
 
-/*This is for Small Sizes*/
-@media only screen and (max-width: 60rem) {
-    main {
+/*This is for Hamburger Menu on larger screens than small*/
+@media only screen and (min-width: 626px) {
+    nav button {
+        display: none;
+    }
+}
+
+
+/*This is small screens*/
+@media only screen and (max-width: 625px) {
+    /* Homepage Content*/
+    nav {
+        background-color: #0b3948;
+    }
+
+    nav button {
+        margin: .2rem 2vw;
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    #hamburgerBtn span:nth-child(1) {
         display: block;
     }
+
+    #hamburgerBtn span:nth-child(2) {
+        display: none;
+    }
+
+    #hamburgerBtn.open span:nth-child(1) {
+        display: none;
+    }
+
+    #hamburgerBtn.open span:nth-child(2) {
+        display: flex;
+    }
+
+    .templedisplay a {
+        margin-top: 0;
+    }
+
+    .reservation a {
+        margin-top: 190px;
+    }
+
+    footer {
+        display: block;
+      }
     
+    .c-contact {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    /* Services Page */
+    .s-image-text1 {
+        display: block;
+    }
+
+    .s-image-text2 {
+        display: block;
+    }
+
+    /*Form sizes*/
     form fieldset{
         margin: 30px;
         border: 1px solid #1a1f23;
@@ -621,5 +703,12 @@ p {
     
     form{
       display: block;
+    }
+}
+
+/*This is for Small Sizes*/
+@media only screen and (max-width: 60rem) {
+    main {
+        display: block;
     }
 }
