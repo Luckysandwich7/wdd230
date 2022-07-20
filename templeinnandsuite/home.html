@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan K. Alvord | WDD 230</title>
     <meta name="description" content="Assignment portal for Ryan Alvord in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -38,7 +38,9 @@
         <section class="templedisplay">
             <!--holds Json information to auto rotate different temples-->
             <h2>Temple of the Day</h2>
-            <div class="cards"></div>
+            <h3>Mount Timponogas Temple</h3>>
+            <p></p>
+            <a class="c-btn" href="temple.html">View Temple List</a>
         </section>
         <section class="reservation">
             <h2>Reservation</h2>
@@ -99,20 +101,6 @@
 
     <script src="stylesheets\temple_list.js"></script>  
     <script src="stylesheets\weather.js"></script>
-
-    <script>
-        async function loadAffiliates() {
-        await runFetch();
-
-        let affiliate = getRandomAffiliate();
-        let displayAffiliate = displayAffiliates();
-        displayAffiliate(affiliate, 'section .templedisplay .cards');
-        }
-
-        loadAffiliates()
-    </script>
     
 </body>
 </html>
-
-<!--C:\Users\ryana\Desktop\CSE 230\wdd230\templeinnandsuite\images\Temple Inn & Suites.png-->
