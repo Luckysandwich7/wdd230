@@ -15,7 +15,9 @@
 
 <body>
     <header>
-        <a href="index.html"><img src="images\Temple Inn & Suites.png" alt="Temple Inn & Suites Logo"></a>
+        <div class="logo">
+            <a href="index.html"><img src="images\Temple Inn & Suites.png" alt="Temple Inn & Suites Logo"></a>
+        </div>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                     <ul id="primaryNav">
@@ -26,6 +28,10 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
         </nav>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images\facebook.jpg" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images\instagram.jpg" alt="Instagram Icon"></a>
+        </div>
     </header>
     <main>
         <div class="section_0">
@@ -36,20 +42,43 @@
         </section>
         <section class="reservation">
             <h2>Reservation</h2>
-            <img src="images/youth-attending-temple-1207908-wallpaper.jpg" alt="Family walking towards the St. George Temple">
+            <h3>Looking for a Temple to Visit?</h3>
+            <p>Click the link below to reserve a date and time for your temple visit with ease!</p>
             <a class="c-btn" href="reservation.html">Reserve Now</a>
-       </section>
-       </div>
-       <section class="weather">
-
-       </section>
-       <section class="googleMap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1796.6526329120593!2d-111.8914789597786!3d40.77087627750453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f507c72c8039%3A0xe67a34043a62cb5e!2sChurch%20Office%20Building!5e0!3m2!1sen!2sus!4v1658194236951!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       </section>
+        </section>
+        </div>
+        <div class="section_1">
+           <section>
+                <h2>Weather</h2>
+                <div class="weather">
+                    <div class="weather1">
+                        <h3>Day 1 of weather</h3>
+                    </div>
+                    <div class="weather2">
+                        <h3>Day 2 of weather</>
+                    </div>
+                    <div class="weather3">
+                        <h3>Day 3 of weather</h3>
+                    </div>
+                </div>
+           </section>
+        </div>
+        <div class="section_2">
+            <section class="googleMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1796.6526329120593!2d-111.8914789597786!3d40.77087627750453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f507c72c8039%3A0xe67a34043a62cb5e!2sChurch%20Office%20Building!5e0!3m2!1sen!2sus!4v1658194236951!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>© <span id="copyDate"></span> <strong>|</strong> Ryan K. Alvord <strong>|</strong> Utah</p>
-        <p>Last Updated: <span id="dateMod"></span></p>
+        <div class="c-contact">
+            <h3>Contact</h3>
+            <h5>Office: <a href="tel:8018888888">(801) 888-8888</a></h5>
+            <h5>50 E North Temple St</h5>
+            <h5>Salt Lake City, UT 84150</h5>
+            <h5>Email: <a href="mailto:TN&S@churchofjesuschrist.org">TN&S@churchofjesuschrist.org</a></h5>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images\facebook.jpg" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images\instagram.jpg" alt="Instagram Icon"></a>
+        </div>
     </footer>
 
     <script src="js/javascript.js"></script>
@@ -61,13 +90,7 @@
         await runFetch();
 
         let affiliate = getRandomAffiliate();
-        displayAffiliate(affiliate, 'div.spotlight.spotlight1');
-
-        affiliate = getRandomAffiliate();
-        displayAffiliate(affiliate, 'div.spotlight.spotlight2');
-
-        affiliate = getRandomAffiliate();
-        displayAffiliate(affiliate, 'div.spotlight.spotlight3');
+        displayAffiliate(affiliate, 'div.section_0.templedisplay');
         }
 
         loadAffiliates()

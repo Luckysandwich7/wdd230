@@ -1,7 +1,7 @@
 let affiliates = null
 let randomNumbers = []
 
-const requestURL = 'https://luckysandwich7.github.io/wdd230/templeinnandsuite/temple.json.json';
+const requestURL = 'https://luckysandwich7.github.io/wdd230/templeinnandsuite/temple.json';
 const cards = document.querySelector('.cards');
 
 async function runFetch() {
