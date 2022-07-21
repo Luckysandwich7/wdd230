@@ -15,6 +15,7 @@ fetch(requestURL)
 function displayAffiliates(affiliate) {
   // Create elements to add to the document
   let card = document.createElement('section');
+  let heart = document.createElement('img');
   let h3 = document.createElement('h3');
   let phone = document.createElement('a');
   let email = document.createElement('a');
@@ -36,12 +37,16 @@ function displayAffiliates(affiliate) {
   closed.textContent =  `Closed: ${affiliate.closed}`
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
+  heart.setAttribute('src', affiliate.heart);
+  heart.setAttribute('alt', `heart`);
+  heart.setAttribute('loading', 'lazy');
   image.setAttribute('src', affiliate.image);
   image.setAttribute('alt', `${affiliate.name}`);
   image.setAttribute('loading', 'lazy');
 
   // Add/append the section(card) with the h2 element
   card.classList.add('card')
+  card.appendChild(heart);
   card.appendChild(h3);
   card.appendChild(image);
   card.appendChild(phone);

@@ -58,7 +58,6 @@ nav button {
     border: none;
     font-size: 2rem;
     color: #fff;
-    float: right;
 }
 
 nav ul li a {
@@ -227,7 +226,7 @@ p {
   .weather {
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 200px;
+    height: 350px;
     grid-gap: 5px;
     margin-bottom: 20px;
     background-color: #416165;

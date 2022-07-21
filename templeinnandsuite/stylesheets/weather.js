@@ -2,8 +2,16 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const currentHum = document.querySelector('#weather-humidity');
+//popup variables
+const popName = document.querySelector('pop-Name');
+const popEvent = document.querySelector('pop-Event');
+const popStartDate = document.querySelector('pop-start-date');
+const popEndDate = document.querySelector('pop-end-date');
+const popDesc = document.querySelector('pop-desc');
+const popTags = document.querySelector('pop-tags');
 
-const url = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=40.7608&lon=111.8910&cnt=3&appid=a099de85e99260a3db382924a0fb5efc";
+const url = `https://api.openweathermap.org/data/2.5/onecall?lat=40.42594881179754&lon=-111.8755195383611&units=imperial&exclude=minutely,hourly&appid=a099de85e99260a3db382924a0fb5efc`;
 
 apiFetch(url);
 
@@ -22,13 +30,42 @@ async function apiFetch(apiURL) {
     }
   }
 
-function displayResults(weatherData) {
-  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+function displayResults(data) {
+  data.daily.forEach((day, i)=>{
+    
+    const temp = document.querySelector('#temp' + i);
 
-  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
+    temp.innerHTML = `<strong>${day.temp.day.toFixed(0)}</strong>`;
+
+    const icon = document.querySelector('#icon' + i);
+
+    const iconSrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
+    const desc = day.weather[0].description;
   
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
+    icon.setAttribute('src', iconSrc);
+    icon.setAttribute('alt', desc);
+
+    const captionDesc = document.querySelector('#captionDesc' + i);
+
     captionDesc.textContent = desc;
-  }
+
+    const humidity = document.querySelector('#humidity' + i);
+
+    humidity.innerHTML = `<strong>${day.humidity.toFixed(0)}</strong>`;
+
+  })
+}
+
+
+  //Current Temp is = current.temp *DONE
+  //Current humidity is = current.humidity
+  //Current condition is = current.weather.description or current.weather.id *DONE
+
+
+  //Pop up content
+  //Alert sender = alerts.sender_name
+  //alert name = alerts.event
+  //Alert start date = alerts.start
+  //Alert end date = alerts.end
+  //Alert description = alerts.description
+  //Alert tags = alerts.tag
