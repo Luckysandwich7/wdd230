@@ -226,10 +226,14 @@ p {
   .weather {
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 350px;
+    height: 275px;
     grid-gap: 5px;
     margin-bottom: 20px;
     background-color: #416165;
+  }
+
+  .weather p {
+    padding-bottom: 0;
   }
 
   .weather h3 {
@@ -245,6 +249,17 @@ p {
     background-color: #ffffff;
     border-radius: 15px 15px 15px 15px;
     margin: 10px;
+    text-align: -webkit-center;
+  }
+
+  .weather1 img {
+    width: 100px;
+  }
+
+  .weather1 figcaption {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   .weather2 {
@@ -253,6 +268,17 @@ p {
     background-color: #ffffff;
     border-radius: 15px 15px 15px 15px;
     margin: 10px;
+    text-align: -webkit-center;
+  }
+
+  .weather2 img {
+    width: 100px;
+  }
+
+  .weather2 figcaption {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   .weather3 {
@@ -261,6 +287,17 @@ p {
     background-color: #ffffff;
     border-radius: 15px 15px 15px 15px;
     margin: 10px;
+    text-align: -webkit-center;
+  }
+
+  .weather3 img {
+    width: 100px;
+  }
+
+  .weather3 figcaption {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   footer {
@@ -799,9 +836,9 @@ p {
     }
 }
 
-/*This is for Small Sizes*/
-@media only screen and (max-width: 60rem) {
-    main {
-        display: block;
+/* Homepage for very small screens*/
+@media only screen and (max-width: 597px) {
+    .weather3 {
+        display: none;
     }
 }
