@@ -1,5 +1,7 @@
 const requestURL = 'https://luckysandwich7.github.io/wdd230/templeinnandsuite/temple.json';
 const cards = document.querySelector('.cards');
+const heartStorage = JSON.parse(localStorage.getItem('hearts')) || [];
+
 
 fetch(requestURL)
   .then(function (response) {
@@ -12,7 +14,7 @@ fetch(requestURL)
     affiliates.forEach(displayAffiliates);
   });
 
-function displayAffiliates(affiliate) {
+function displayAffiliates(affiliate, idx) {
   // Create elements to add to the document
   let card = document.createElement('section');
   let heart = document.createElement('img');
@@ -37,11 +39,15 @@ function displayAffiliates(affiliate) {
   closed.textContent =  `Closed: ${affiliate.closed}`
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
-  heart.setAttribute('src', affiliate.heart);
+  heart.setAttribute('src', heartStorage.includes(String(idx)) ? 'images/filled_heart.png' : 'images/empty_heart.png');
   heart.setAttribute('alt', `heart`);
   heart.setAttribute('loading', 'lazy');
-  // heart.setAttribute('id', 'open');
-  // heart.onclick = toggleHeart
+  heart.setAttribute('id', affiliate.id);
+  heart.onclick = (heartImg) => {
+    const hearts = JSON.parse(localStorage.getItem('hearts')) || [];
+    hearts.push(heartImg.currentTarget.id)
+    localStorage.setItem('hearts', JSON.stringify(hearts))
+  }
   image.setAttribute('src', affiliate.image);
   image.setAttribute('alt', `${affiliate.name}`);
   image.setAttribute('loading', 'lazy');

@@ -426,6 +426,10 @@ p {
     text-align: center;
 }
 
+.page-temple .card img:nth-child(1) {
+    width: 50px;
+}
+
 .page-temple .card a:hover {
     color: rgb(163, 163, 163);
     margin: 5px;
