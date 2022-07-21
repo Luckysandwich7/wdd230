@@ -9,7 +9,7 @@ X.onclick = toggleMenu;
 
 //Temples Page Heart system
 
-function toggleMenu() {
+function toggleHeart(heartElement) {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
 }

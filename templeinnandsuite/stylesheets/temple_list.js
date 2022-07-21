@@ -40,6 +40,8 @@ function displayAffiliates(affiliate) {
   heart.setAttribute('src', affiliate.heart);
   heart.setAttribute('alt', `heart`);
   heart.setAttribute('loading', 'lazy');
+  // heart.setAttribute('id', 'open');
+  // heart.onclick = toggleHeart
   image.setAttribute('src', affiliate.image);
   image.setAttribute('alt', `${affiliate.name}`);
   image.setAttribute('loading', 'lazy');
